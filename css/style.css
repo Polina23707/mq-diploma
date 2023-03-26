@@ -108,6 +108,26 @@
   z-index: 1;
 }
 
+.trands-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-size: 14px;
+  position: relative;
+}
+
+.trands-heading:before {
+  content: '';
+  box-sizing: content-box;
+  background-color: rgb(225, 217, 189);
+  width: 65px;
+  height: 3px;
+  position: absolute;
+  top: 30px;
+  /* left: 105px; */
+  left: 47%;
+}
+
 .main-section {
   margin: 50px auto 0;
   padding: 0 15px;
@@ -417,6 +437,26 @@
   font-size: 12px;
   padding-bottom: 5px;
   padding-left: 3px;
+}
+
+.products-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-size: 14px;
+  position: relative;
+}
+
+.products-heading:before {
+  content: '';
+  box-sizing: content-box;
+  background-color: rgb(225, 217, 189);
+  width: 65px;
+  height: 3px;
+  position: absolute;
+  top: 30px;
+  /* left: 105px; */
+  left: 47%;
 }
 
 .footer {
