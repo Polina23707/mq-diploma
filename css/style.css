@@ -111,11 +111,12 @@
 .trands-blocks {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .trand-block {
-  width: 23%;
+  width: calc(25% - 5.25px);
   height: 320px;
   background-color: rgba(45, 47, 47, 0.43);
   position: relative;
@@ -136,6 +137,7 @@
 
 .trand-block-garden {
   background-image: url("../images/trend1.jpg");
+  background-size: cover;
 }
 
 .trand-block-cheese {
@@ -151,9 +153,10 @@
 }
 
 .trand-block-text {
-  border: 1px solid #b59f5b;
-  width: 80%;
+  border: 2px solid #b59f5b;
+  /* width: 80%; */
   margin: 25px;
+  padding: 35px;
   position: relative;
   z-index: 2;
 }
@@ -537,6 +540,8 @@
 .products-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items:last baseline;
   width: 1170px;
   margin: 0 auto;
   justify-content: space-between;
@@ -664,3 +669,28 @@
   font-weight: 700;
   color: rgb(173, 173, 173);
 }
+
+@media (max-width: 1200px) and (min-width: 641px) {
+  .header-menu-items {
+    display: none;
+  }
+
+  .trand-block {
+    width: calc(50% - 3.5px);
+  }
+}
+
+/* @media (max-width: 640px) {
+  .header-menu-items {
+    display: none;
+  }
+
+  .trand-block {
+    width: 100%;
+  }
+
+  .main-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+} */
