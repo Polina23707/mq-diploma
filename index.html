@@ -423,7 +423,16 @@
 
     <div class="products-container">
       <div class="products-block">
-        <div class="product-img product-img1"></div>
+        <div class="product-img3">
+          <picture class="product-img">
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+            <source media="(min-width: 641px)" srcset="images/shop-item-tablet1.jpg">
+            <source srcset="images/shop-item-mobile1.jpg">
+            <img src="images/shop-item-desk1.jpg" alt="Изображение">
+          </picture>
+        </div>
+        
+        <!-- <div class="product-img product-img1"></div> -->
         <div class="products-info">
           <h2 class="product-name">Подушки на диван</h2>
           <div class="product-description">
@@ -444,7 +453,16 @@
       </div>
 
       <div class="products-block">
-        <div class="product-img product-img2"></div>
+        <div class="product-img3">
+          <picture class="product-img">
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+            <source media="(min-width: 641px)" srcset="images/shop-item-tablet2.jpg">
+            <source srcset="images/shop-item-mobile2.jpg">
+            <img src="images/shop-item-desk2.jpg" alt="Изображение">
+          </picture>
+        </div>
+
+        <!-- <div class="product-img product-img2"></div> -->
         <div class="products-info">
           <h2 class="product-name">Кукла «Зайчик»</h2>
           <div class="product-description">
@@ -466,7 +484,16 @@
       </div>
 
       <div class="products-block">
-        <div class="product-img product-img3"></div>
+        <div class="product-img3">
+          <picture class="product-img">
+            <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+            <source media="(min-width: 641px)" srcset="images/shop-item-tablet3.jpg">
+            <source srcset="images/shop-item-mobile3.jpg">
+            <img src="images/shop-item-desk3.jpg" alt="Изображение">
+          </picture>
+        </div>
+        
+        <!-- <div class="product-img product-img3"></div> -->
         <div class="products-info">
           <h2 class="product-name">Шестиугольная рамка</h2>
           <div class="product-description">
@@ -511,6 +538,42 @@
 
     <a href="#0" class="copyrights link">Copyright © 2009–2019 City Blog LLC.</a>
   </footer>
+  <div class="popup-mask"></div>
+  <div class="popup">
+    <div class="popup-heading">Ваш фидбек</div>
+    <form>
+      <div class="popup-option-group">
+        <label>
+          <span class="popup-text-option">Как часто вы заходите на сайт?</span>
+          <select class="popup-input popup-input-option" required>
+            <option>Почти каждый день</option>
+            <option>Раз в несколько дней</option>
+            <option>Раз в несколько недель</option>
+            <option>Несколько раз в год</option>
+          </select>
+        </label>
+      </div>
+      <div class="popup-radio-group">
+        <span class="popup-text-radio">Вы подписаны на e-mail рассылку?</span>
+        <label class="radio-group">
+          <input class="popup-radio-button" type="radio" name="radio-group" required>
+          <span class="popup-radio">Да</span>
+        </label>
+        <label class="radio-group">
+          <input class="popup-radio-button" type="radio" name="radio-group">
+          <span class="popup-radio">Нет</span>
+        </label>
+      </div>
+      <div class="popup-text-group">
+        <label>
+          <span class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea class="popup-input popup-input-text" name="" id="">Может, больше рецептов?</textarea>
+          <button class="popup-button" type="submit">Отправить</button>
+        </label>
+      </div>
+
+    </form>
+  </div>
 </body>
 
 </html>
