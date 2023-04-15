@@ -165,6 +165,7 @@
   font-size: 20px;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .trands-heading {
@@ -874,6 +875,13 @@
 /* NO DESKTOP */
 
 @media (max-width: 1200px) {
+
+  .burger-menu {
+    display: block;
+    margin-top: 55px;
+    margin-right: 20px;
+  }
+
   .header-logo {
     width: 160px;
     margin-top: 45px;
@@ -943,11 +951,7 @@
 
 @media (max-width: 1200px) and (min-width: 641px) and (orientation: portrait) {
 
-  .burger-menu {
-    display: block;
-    margin-top: 55px;
-    margin-right: 20px;
-  }
+
 
   .title {
     font-size: 40px;
