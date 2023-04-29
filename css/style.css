@@ -1161,13 +1161,15 @@
 
   .product-img {
     box-sizing: border-box;
-    width: 90%;
+    /* width: 90%; */
+    max-width: 90%;
     height: fit-content;
   }
 
 
   .products-block {    
     margin: 0 auto 60px;
+    width: 100%;
   }
 
   .products-container {
