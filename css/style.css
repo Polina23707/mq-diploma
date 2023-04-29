@@ -535,6 +535,10 @@
   position: relative;
 }
 
+.product-img-item {
+  width: 100%;
+}
+
 .products-heading:before {
   content: '';
   box-sizing: content-box;
@@ -1160,9 +1164,7 @@
   }
 
   .product-img {
-    box-sizing: border-box;
-    /* width: 90%; */
-    max-width: 90%;
+    max-width: 100%;
     height: fit-content;
   }
 
